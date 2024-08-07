@@ -1,0 +1,33 @@
+import java.lang.System;
+import java.util.Scanner;
+class marks
+{
+    public static void main(String args[])
+    {
+Scanner scan=new Scanner(System.in);
+        int m1=scan.nextInt();
+        int m2=scan.nextInt();
+        int m3=scan.nextInt();
+        int m4=scan.nextInt();
+        int m5=scan.nextInt();
+        int total=m1+m2+m3+m4+m5;
+        System.out.println(total);
+        int average=total/5;
+        System.out.println(average );
+        
+        if(average>90)
+        {
+            System.out.println("A+");
+           
+        }
+        else if (90<average>=70)
+        {
+            System.out.println("B");
+        }
+        else if(average<45)
+        {
+            System.out.print("C");
+        }
+  
+        }
+}
